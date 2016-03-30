@@ -102,7 +102,7 @@ class CodeceptionMonolog extends PlatformExtension
             $failingStep = $this->getFailingStep($test->getScenario());
 
             $failMessage =  'Tried to ' . $test->getFeature()
-                . ' but failed when I wanted to ' . $failingStep->getHumanizedAction()
+                . ' but failed when I wanted to ' . $failingStep->getHumanizedActionWithoutArguments()
                 . ' (' . $failMessage . ')';
         }
 
